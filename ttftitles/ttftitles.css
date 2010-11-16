@@ -1,0 +1,196 @@
+#submenu .current {
+	background: #031726;
+	border-top: 1px solid #045290;
+	border-right: 2px solid #045290;
+	color: #FFF;
+}
+
+#submenu a {
+	border: none;
+	color: #fff;
+	font-size: 12px;
+	padding: .3em .4em .4em;
+}
+
+#subsubmenu .current {
+	font-weight: bold;
+	text-decoration: none;
+}
+
+#subsubmenu li {
+	display: inline;
+	line-height: 200%;
+	list-style: none;
+	text-align: center;
+	white-space: nowrap;
+}
+
+#subsubmenu {
+	background: #031726;
+	border-bottom: none;
+	margin: 0;
+	padding: 3px 3em 1px 4em;
+}
+
+#subsubmenu .current {
+	background: #f9fcfe;
+	border-top: 1px solid #045290;
+	border-right: 2px solid #045290;
+	color: #000;
+}
+
+#subsubmenu a {
+	border: none;
+	color: #fff;
+	font-size: 12px;
+	padding: .3em .4em .4em;
+}
+
+#subsubmenu a:hover {
+	background: #ddeaf4;
+	color: #393939;
+}
+
+#subsubmenu .current a:hover {
+	background: #f9fcfe;
+	color: #000;
+}
+
+#subsubmenu li {
+	line-height: 180%;
+	height: 25px;
+	margin-right: 2px;
+}
+
+
+div.field {
+  margin-top: 9px;
+  margin-bottom: 9px;
+}
+div.field input {
+  vertical-align: bottom;
+}
+div.subfield {
+  margin-left: 100px
+}
+
+div.subblock {
+  margin-left: 150px;
+  float: right;
+}
+
+div.subblock label.subblock {
+  display: block;
+  float: left;
+  width: 100px;
+  padding: 1px 5px;
+  padding-top: 5px;
+  margin: 0px 5px 5px 0;
+  text-align: right;
+  font-weight: bold;
+ }
+
+div.field label.main { 
+  display: block;
+  float: left;
+  width: 180px;
+  padding: 1px 5px;
+  padding-top: 5px;
+  margin: 0px 5px 5px 0;
+  margin-bottom: 0px;
+  text-align: right;
+  font-weight: bold;
+  clear: both;
+}
+
+div.field label.sub { 
+  display: block;
+  float: left;
+  width: 180px;
+  padding: 1px 5px;
+  padding-top: 5px;
+  margin: 0px 5px 5px 0;
+  margin-bottom: 0px;
+  margin-left: 50px;
+  text-align: right;
+  font-weight: bold;
+  clear: both;
+}
+
+table.formfields td.label {
+  font-weight: bold;
+  text-align: right;
+  width: 180px;
+  vertical-align: top;
+}
+
+
+table.formfields td.sublabel {
+  font-weight: bold;
+  text-align: right;
+  width: 100px;
+  vertical-align: top;
+}
+
+
+table.formfields td {
+  vertical-align: top;
+}
+
+div.block {
+  border:           1px solid #333333;
+  background-color: #FFF;
+  padding:          5px;
+  margin:           30px 5px 15px 10px;
+}
+ 
+ 
+span.blocktitle {
+  position:         relative;
+  display:          inline;
+  top:              -12px;
+  font:             normal normal 10px verdana, helvetica, sans-serif;
+  padding:          1px 2px;
+  margin:           0px 0px -12px 5px;
+  color:            #666666;
+  background-color: #EEE;
+  border:           1px solid #333333;
+  text-transform:   uppercase;
+}
+
+table#overrides {
+border-collapse: collapse;
+margin-left: auto;
+margin-right: auto;
+}
+
+table#overrides td {
+border: 1px solid #ccc;
+padding: 1px 6px;
+}
+
+table#overrides th {
+text-align: left;
+}
+
+
+div.hiddenhelp {
+clear: both;
+smargin-left: 196px;
+max-width: 400px;
+smargin-bottom 10px;
+smargin-top: -6px;
+border: 1px solid #999;
+background-color: #f9f9f9;
+}
+
+div.hiddenhelp h3 {
+background-color: #ccc;
+margin: 0px;
+padding: 3px;
+}
+
+div.hiddenhelp p {
+padding: 3px;
+margin: 0px;
+}

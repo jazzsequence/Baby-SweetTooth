@@ -1,0 +1,27 @@
+    Baby SweetTooth
+    Copyright (C) 2010  Arcane Palette Creative Design
+
+======================================================================================
+	NOTE:
+	The Baby SweetTooth WordPress theme is released free under the GNU
+	Public License as outlined below, however, the fonts included with 
+	the theme are released under their own respective licenses.  While 
+	the source code of the Baby SweetTooth theme may be manipulated and 
+	distributed	according to the GPLv3.0, the fonts KlinkOMite and Spahrty 
+	Girl located in /ttftitles/fonts are released free for personal (non-
+	commercial) use only, and must be removed for any commercial 
+	redistributions of the theme.
+======================================================================================
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+
+    http://www.opensource.org/licenses/gpl-3.0.html

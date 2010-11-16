@@ -1,0 +1,45 @@
+Baby SweetTooth
+** CHANGELOG **
+
+** 7-13/2010 ** 
+** Version 2.0.2 **
+Fixed feedburner code (was using deprecated form code)
+Fixed shadow in header font
+
+** 7-9-2010 **
+** Version 2.0.1 **
+changed div.topstripe to position: fixed so it floats on top of content like the footer stripe
+
+** 7-8-2010 **
+** Version 2.0 **
+First official re-release
+-directory name changed from /babygirl to /babysweettooth
+-ttftitles embedded into the theme
+-KlinkOMite & Spahrty Girl added to /ttftitles/fonts
+-404.php - breadcrumbs removed (bug from 1.1.2)
+-archive.php - added "Tags: " to the_tags hook (originally outside the_tags())
+-blog.php - commented out author call, and updated the_tags hook
+-comments.php - changed if ($comments) to if ( have_comments() ).  set the "% comments on %%" text to not display on pages (bug with "no comments" being displayed on pages with comments.)
+-footer.php - updated credit link, added dynamically updating year for copyright
+-functions.php - added options to admin page, changed mytheme_add_admin function
+-header.php - changed nav menu to WP 3.0 custom menu, replaced static image in top right corner with configurable images set in options page
+-home.php - added welcome screen if theme options aren't set. made categories, featured image configurable from options page.
+-index.php - removed duplicate the_category call, updated the_tags hook.
+-page.php - unchanged
+-page_archive.php - removed
+-page_blog.php - removed
+-page-comments - unchanged
+-search.php - removed
+-sidebar.php - made video and newsletter boxes optional and configurable from the options page.  
+-sidebar_left.php - unchanged
+-sidebar_right.php - unchanged
+-tag.php - removed breadcrumbs, added dynamic title to identify posts tagged ____
+-style.css - many cosmetic changes, most notably replacing the background images surrounding the boxes and replacing them with borders and border-radius.  added text-shadow to nav hover, footer text, and submit button text.  widened the sidebar.  fixed various minor alignment issues.  still a lot of deprecated code left lying around but none that should be causing any problems.
+-added favicon
+-modified /ttftitles/ttftitles.php and /ttftitles/js/ttftitles.js (replaced /wp-content/plugins/ttftitles and related paths with /wp-content/themes/babysweettooth/ttftitles
+-added check if featured categories are empty -- if they are empty, the boxes don't display
+-added readme.html
+
+** 1-28-2009 **
+** Version 1.1.2 **
+Last official release
