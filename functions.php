@@ -2,7 +2,7 @@
 if ( function_exists('register_sidebars') )
     register_sidebars(3);
 
-include (TEMPLATEPATH.'/ttftitles/ttftitles.php');
+require (TEMPLATEPATH.'/ttftitles/ttftitles.php');
 
 $themename = "Baby Sweettooth";
 $shortname = "sweettooth";

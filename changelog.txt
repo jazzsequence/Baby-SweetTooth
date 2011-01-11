@@ -4,7 +4,7 @@ Baby SweetTooth
 ** 1-11-2011 ** 
 ** Version 2.0.3 **
 Removed checkactive widgets blah
-changed readme.html to readme.php
+
 
 ** 7-13-2010 ** 
 ** Version 2.0.2 **
