@@ -1,7 +1,12 @@
 Baby SweetTooth
 ** CHANGELOG **
 
-** 7-13/2010 ** 
+** 1-11-2011 ** 
+** Version 2.0.3 **
+Removed checkactive widgets blah
+changed readme.html to readme.php
+
+** 7-13-2010 ** 
 ** Version 2.0.2 **
 Fixed feedburner code (was using deprecated form code)
 Fixed shadow in header font

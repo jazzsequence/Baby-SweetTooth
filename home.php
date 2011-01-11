@@ -8,7 +8,7 @@
             <div class="featuredtop">
             <h2>Thanks for installing Baby Sweettooth!</h2>
             <h3>It looks like this is the first time you've used this theme.  That means you need to set it up.</h3>
-            <p>Head over to the <a href="<?php bloginfo('url'); ?>/wp-admin/themes.php?page=functions.php">theme options</a> page in your dashboard to get started or take a look at the <a href="<?php bloginfo('template_directory'); ?>/readme.html">Readme</a> file included in the theme.</p>
+            <p>Head over to the <a href="<?php bloginfo('url'); ?>/wp-admin/themes.php?page=functions.php">theme options</a> page in your dashboard to get started or take a look at the <a href="<?php bloginfo('template_directory'); ?>/readme.php">Readme</a> file included in the theme.</p>
             <p>If you feel that you are seeing this message in error, make sure that the Featured Post section in the <a href="<?php bloginfo('url'); ?>/wp-admin/themes.php?page=functions.php">Baby Sweettooth Options</a> page is entered.  (For that matter, make sure all the Featured sections are filled in.)</p>
             </div>
             <?php } else { ?>	
