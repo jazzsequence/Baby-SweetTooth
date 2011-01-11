@@ -49,6 +49,15 @@ sfHover = function() {
 }
 if (window.attachEvent) window.attachEvent("onload", sfHover);
 //--><!]]></script> 
+	<!-- this activates Twitter @anywhere hovercards -->
+	  <script src="http://platform.twitter.com/anywhere.js?id=3O4tZx3uFiEPp5fk2QGq1A&v=1">
+      </script>
+      <script type="text/javascript">
+         twttr.anywhere(function(twitter) {
+                  twitter.hovercards();
+         });
+      </script>
+
 </head>
 
 <body><div class="topstripes"></div>

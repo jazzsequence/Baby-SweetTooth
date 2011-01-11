@@ -60,6 +60,8 @@
 	<?php endif; ?>
 <?php endif; ?>
 
+ <div class="navigation"><?php paginate_comments_links(); ?> </div>
+
 <div style="clear:both;"></div>
 
 
