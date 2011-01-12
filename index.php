@@ -38,7 +38,7 @@
 			
 		</div>
 				
-		<div class="comments">
+		<div class="comments" id="comments">
 	
 			<h4>Comments</h4>
 			<?php comments_template(); // Get wp-comments.php template ?>

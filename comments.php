@@ -27,7 +27,7 @@
 	<b><?php comments_number('No Comments', 'One Comment', '% Comments' );?> on "<?php the_title(); ?>"</b><br /><br />
 	<?php } ?>
 
-	<ol class="commentlist" id="comments">
+	<ol class="commentlist">
 	<?php wp_list_comments('type=comment&callback=sweettooth_comment'); ?>
 	</ol>
 	
