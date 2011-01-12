@@ -4,9 +4,37 @@ if ( function_exists('register_sidebars') )
 
 require (TEMPLATEPATH.'/ttftitles/ttftitles.php');
 
+// set content width
+if ( ! isset( $content_width ) ) $content_width = 650;
+
+// this changes the output of the comments
+function sweettooth_comment($comment, $args, $depth) {
+   $GLOBALS['comment'] = $comment; ?>
+   <li <?php comment_class(); ?> id="li-comment-<?php comment_ID() ?>">
+     <div id="comment-<?php comment_ID(); ?>">
+      <div class="comment-author vcard">
+         <?php echo get_avatar
+($comment,$size='64',$default='<path_to_url>' ); ?>
+On <?php printf(__('%1$s at %2$s'), get_comment_date(), get_comment_time()) ?>
+     <?php printf(__('<cite>%s</cite> <span class="says">said:</span>'), get_comment_author_link()) ?>
+      </div>
+      <?php if ($comment->comment_approved == '0') : ?>
+         <em><?php _e('Your comment is awaiting moderation.') ?></em>
+         <br />
+      <?php endif; ?>
+      <?php comment_text() ?>
+      <div class="comment-meta commentmetadata"><?php edit_comment_link(__('(Edit)'),'  ','') ?></div>
+      <div class="reply"><button>
+         <?php comment_reply_link(array_merge
+		 ( $args, array('depth' => $depth, 'reply_text' => 'Respond to this', 'max_depth' => $args['max_depth']))) ?>
+      </button></div>
+     </div>
+<?php
+        }
+
+/* Here's soem theme options */
 $themename = "Baby Sweettooth";
 $shortname = "sweettooth";
-$GLOBALS['content_width'] = 625;
 $options = array (
 				array(	"name" => "<h2>Baby Sweettooth Options</h2>",
 						"type" => "title"),
@@ -352,8 +380,9 @@ add_action('admin_menu', 'mytheme_add_admin');
 /*End of Add a Theme Options Page*/
 
 /*End of Theme Options =======================================*/
-?>
-<?php function the_content_limit($max_char, $more_link_text = '(more...)', $stripteaser = 0, $more_file = '') {
+
+// this truncates post excerpts
+	function the_content_limit($max_char, $more_link_text = '(more...)', $stripteaser = 0, $more_file = '') {
     $content = get_the_content($more_link_text, $stripteaser, $more_file);
     $content = apply_filters('the_content', $content);
     $content = str_replace(']]>', ']]&gt;', $content);

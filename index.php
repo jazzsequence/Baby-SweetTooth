@@ -20,6 +20,7 @@
 				</div>
 				
 			</div>
+			<div class="clear"></div>
 
 			<?php the_content(__('Read more'));?><div style="clear:both;"></div>
 			

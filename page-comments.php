@@ -16,7 +16,8 @@ Template Name: Page with Comments
 				<div class="dateright">
 					<p><span class="comment"><?php comments_popup_link('Leave a Comment', '1 Comment', '% Comments'); ?></span></p> 
 				</div> 
-			<h1><?php the_title(); ?></h1><br />
+                <div class="clear"></div>
+			<h1><?php the_title(); ?></h1>
 		
 			<?php the_content(__('Read more'));?>
 					<?php if (('open' == $post-> comment_status) && ('open' == $post->ping_status)) {

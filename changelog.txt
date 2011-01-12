@@ -6,6 +6,15 @@ Baby SweetTooth
 Removed checkactive widgets blah
 added paginate_comments_links() to comments.php
 added twitter hovercards to header
+added a clear under the date area to prevent horrible text wrapping
+oh, also introduced the .clear class...
+set width for .postarea
+god this theme is using old code....
+fixed comment code (using ancient comment fetching...)
+added formalize css particularly to clean up comments
+widened comment textarea
+basically cleaned the hell out of the comments and made them pretty.
+
 
 ** 7-13-2010 ** 
 ** Version 2.0.2 **

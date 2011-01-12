@@ -26,25 +26,10 @@
     <?php } else { ?>
 	<b><?php comments_number('No Comments', 'One Comment', '% Comments' );?> on "<?php the_title(); ?>"</b><br /><br />
 	<?php } ?>
-	<ol class="commentlist">
 
-	<?php foreach ($comments as $comment) : ?>
-	
-	<div class="commentleft">
-
-		<li class="<?php echo $oddcomment; ?>" id="comment-<?php comment_ID() ?>">
-			<p><b><?php comment_author_link() ?> on <?php if ($comment->comment_approved == '0') : ?>
-			<em>Your comment is awaiting moderation.</em>
-			<?php endif; ?><?php comment_date('D, jS M Y') ?> <?php comment_time() ?>&nbsp;<?php edit_comment_link('(Edit)','',''); ?></b></p>
-			<div style="float:left;margin:0px 10px 0px 0px;"><?php echo get_avatar( $comment, $size = '70' ); ?></div><?php comment_text() ?>			
-	
-	</div>
-	
-	<div style="border-bottom:1px dotted #C0C0C0; margin-bottom:10px; padding:0px 0px 0px 0px; clear:both;"></div>
-	
-		</li>
-	
-	<?php endforeach; /* end for each comment */ ?>
+	<ol class="commentlist" id="comments">
+	<?php wp_list_comments('type=comment&callback=sweettooth_comment'); ?>
+	</ol>
 	
 	</ol>
 

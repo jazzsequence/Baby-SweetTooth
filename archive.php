@@ -17,10 +17,9 @@
 				
 				<div class="dateright">
 					<p><span class="comment"><?php comments_popup_link('Leave a Comment', '1 Comment', '% Comments'); ?></span></p> 
-				</div>
-				
+				</div>			
 			</div>
-		
+            <div class="clear"></div>		
 			<?php the_content(__('Read more'));?><div style="clear:both;"></div>
 			
 			<div class="postmeta2">

@@ -4,7 +4,7 @@
 	Description: Pink and polkadotted, a free theme for your baby girl. 
 	Author: Arcane Palette Creative Design
 	Author URI: http://www.arcanepalette.com
-	Version: 2.0.2
+	Version: 2.0.3
 	Tags: three-columns, fixed-width, pink, right-sidebar, theme-options
 	
 	*/
@@ -23,6 +23,8 @@ body {
 	padding-top: 15px;
 	padding-bottom: 30px;
 	}
+
+.clear { clear: both; }
 
 /************************************************
 *	Hyperlinks									*
@@ -572,6 +574,7 @@ blockquote {
 	text-align:left;
 	margin: 0px 0px 10px 0px;
 	padding: 10px;
+	width: 650px;
 	}
 	
 	
@@ -647,7 +650,7 @@ blockquote {
 	
 .comments {
 	float: left;
-	width: 643px;
+	width: 650px;
 	margin: 0px 0px 10px 0px;
 	padding: 10px;
 	}
@@ -1070,8 +1073,7 @@ div.aligncenter {
 	}
 	
 #words {
-	background: #EEEEEE;
-	width: 623px;
+	width: 650px;
 	color: #202020;
 	font-size: 12px;
 	font-weight: normal;
@@ -1089,7 +1091,7 @@ div.aligncenter {
 ************************************************/
 	
 #commentblock {
-	width: 623px;
+	width: 650px;
 	text-align:left;
 	float: left;
 	padding: 0px 0px 0px 0px;
@@ -1102,7 +1104,6 @@ div.aligncenter {
 	}
 	
 .commentleft {
-	width: 560px;
 	float: left;
 	padding: 0px 0px 10px 0px;
 	margin: 0px 0px 0px 0px;
@@ -1139,6 +1140,10 @@ div.aligncenter {
 .commentinfo{
 	clear: both;
 	}
+
+div.reply { border-bottom: 1px dotted #ef69b5; padding-bottom: 10px; margin-bottom: 10px; }
+.avatar { float: left; margin: 10px 10px 10px 0;
+
 	
 .topstripes {
 	background:url(images/topstripe.jpg) repeat-x;

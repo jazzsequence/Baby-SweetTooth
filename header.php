@@ -17,6 +17,9 @@
 <?php wp_head(); ?>
 
 <style type="text/css" media="screen"><!-- @import url( <?php bloginfo('stylesheet_url'); ?> ); --></style>
+<link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/css/master.css" />
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.3/jquery.min.js"></script>
+<script src="<?php bloginfo('template_url'); ?>/js/jquery.formalize.js"></script>
 <script type="text/javascript"><!--//--><![CDATA[//><!--
 sfHover = function() {
 	if (!document.getElementsByTagName) return false;
