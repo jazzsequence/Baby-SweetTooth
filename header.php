@@ -15,7 +15,6 @@
 <link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
 <?php wp_get_archives('type=monthly&format=link'); ?>
 <?php wp_head(); ?>
-
 <style type="text/css" media="screen"><!-- @import url( <?php bloginfo('stylesheet_url'); ?> ); --></style>
 <link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/css/master.css" />
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.3/jquery.min.js"></script>
@@ -60,7 +59,7 @@ if (window.attachEvent) window.attachEvent("onload", sfHover);
                   twitter.hovercards();
          });
       </script>
-
+<?php if ( is_singular() ) wp_enqueue_script( "comment-reply" ); ?>
 </head>
 
 <body><div class="topstripes"></div>

@@ -1,6 +1,29 @@
 <?php
 if ( function_exists('register_sidebars') )
-    register_sidebars(3);
+    register_sidebar(array(
+		'name' => 'Top Sidebar',
+		'description' => 'This is the wide sidebar at the top',	
+        'before_widget' => '<li id="%1$s" class="widget %2$s">',
+        'after_widget' => '</li>',
+        'before_title' => '<h2 class="widgettitle">',
+        'after_title' => '</h2>'
+    ));
+    register_sidebar(array(
+		'name' => 'Bottom Left Sidebar',
+		'description' => 'This is the skinny sidebar on the bottom left.',	
+        'before_widget' => '<li id="%1$s" class="widget %2$s">',
+        'after_widget' => '</li>',
+        'before_title' => '<h2 class="widgettitle">',
+        'after_title' => '</h2>'
+    ));
+    register_sidebar(array(
+		'name' => 'Bottom Right Sidebar',
+		'description' => 'This is the skinny sidebar on the bottom right.',	
+        'before_widget' => '<li id="%1$s" class="widget %2$s">',
+        'after_widget' => '</li>',
+        'before_title' => '<h2 class="widgettitle">',
+        'after_title' => '</h2>'
+    ));
 
 require (TEMPLATEPATH.'/ttftitles/ttftitles.php');
 

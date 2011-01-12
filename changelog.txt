@@ -4,6 +4,10 @@ Baby SweetTooth
 ** 1-12-2011 **
 ** Version 2.0.3.alpha-2 **
 Changed styling for comment submit button to match with formalize css buttons
+added a default category in the featured post areas so the theme wouldn't just display the "you haven't set this up yet" page 
+added wp_footer
+added wp_enqueue_script( "comment-reply" ) to the header
+changed register_sidebars function to register_sidebar and added more descriptive headings and info
 
 ** 1-11-2011 ** 
 ** Version 2.0.3.alpha-1 **
