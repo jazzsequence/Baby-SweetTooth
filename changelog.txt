@@ -1,8 +1,12 @@
 Baby SweetTooth
 ** CHANGELOG **
 
+** 1-12-2011 **
+** Version 2.0.3.alpha-2 **
+Changed styling for comment submit button to match with formalize css buttons
+
 ** 1-11-2011 ** 
-** Version 2.0.3 **
+** Version 2.0.3.alpha-1 **
 Removed checkactive widgets blah
 added paginate_comments_links() to comments.php
 added twitter hovercards to header
