@@ -1,10 +1,17 @@
 Baby SweetTooth
 ** CHANGELOG **
 
+** 1-13-2011 **
+** Version 2.0.3.alpha-3 **
+Added an update notification script
+added language_attributes() to header.php
+added comment_form() to comments.php (was using an old method)
+
 ** 1-12-2011 **
 ** Version 2.0.3.alpha-2 **
 Changed styling for comment submit button to match with formalize css buttons
 added a default category in the featured post areas so the theme wouldn't just display the "you haven't set this up yet" page 
+changed the text on the home page if you haven't set up the theme yet
 added wp_footer
 added wp_enqueue_script( "comment-reply" ) to the header
 changed register_sidebars function to register_sidebar and added more descriptive headings and info
