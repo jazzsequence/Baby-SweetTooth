@@ -29,7 +29,7 @@
             </span>
             <p>
 			<!-- this is the featured post -->
-			<div id="featuredpost">
+			<div id="featuredpost" <?php post_class();?>>
 			<?php $recent = new WP_Query("category_name=".$sweettooth_featuredpost."&showposts=1"); while($recent->have_posts()) : $recent->the_post();?>
             <h3><a href="<?php the_permalink() ?>" rel="bookmark"><?php the_title(); ?></a></h3>
 				<?php the_content_limit(350, "Read more..."); ?></div></p>
