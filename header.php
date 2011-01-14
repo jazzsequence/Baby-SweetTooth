@@ -60,7 +60,7 @@ if (window.attachEvent) window.attachEvent("onload", sfHover);
 </head>
 
 <body <?php body_class();?>><div class="topstripes"></div>
-<div align="center">
+<div class="outer">
 <div id="wrap">
 
 	

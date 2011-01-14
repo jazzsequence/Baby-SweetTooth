@@ -6,11 +6,14 @@ Baby SweetTooth
 changed full posts to excerpts on archive page
 changed full posts to excerpts on tag page
 updated sidebar call to use get_sidebar() instead of an include
+updated 404 page to use wp_list_categories instead of wp_list_cats
+resolved issue with archive pages since alpha-3 (archive pages not centered)
 
 ** 1-13-2011 **
 ** Version 2.0.3.alpha-3 **
 Added an update notification script
 added language_attributes() to header.php
+added body_class() to body tag
 added comment_form() to comments.php (was using an old method)
 added a theme setup function
 added wp 3.0 custom menus
