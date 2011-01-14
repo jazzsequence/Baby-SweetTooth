@@ -10,6 +10,7 @@ added a theme setup function
 added wp 3.0 custom menus
 changed Theme URL to Theme URI
 added license
+added a search results template
 
 ** 1-12-2011 **
 ** Version 2.0.3.alpha-2 **
