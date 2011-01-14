@@ -1,13 +1,30 @@
 /* 
 	Theme Name: Baby SweetTooth
-	Theme URL: http://www.arcanepalette.com
+	Theme URI: http://museumthemes.com/free-themes/baby-sweettooth/
 	Description: Pink and polkadotted, a free theme for your baby girl. 
 	Author: Arcane Palette Creative Design
 	Author URI: http://www.arcanepalette.com
 	Version: 2.0.3.alpha-3
-	Tags: three-columns, fixed-width, pink, right-sidebar, theme-options
-	
+	Tags: three-columns, fixed-width, pink, right-sidebar, theme-options		
+	License: gpl3
+	License URI: http://www.opensource.org/licenses/gpl-3.0.html
+
 	*/
+
+/* 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+
+    http://www.opensource.org/licenses/gpl-3.0.html
+*/	
 
 body {
 	background: #fed9ee url(images/dots.jpg) repeat-x bottom fixed;

@@ -6,6 +6,10 @@ Baby SweetTooth
 Added an update notification script
 added language_attributes() to header.php
 added comment_form() to comments.php (was using an old method)
+added a theme setup function
+added wp 3.0 custom menus
+changed Theme URL to Theme URI
+added license
 
 ** 1-12-2011 **
 ** Version 2.0.3.alpha-2 **

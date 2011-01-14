@@ -22,7 +22,7 @@
 			</div>
 			<div class="clear"></div>
 
-			<?php the_content(__('Read more'));?><div style="clear:both;"></div>
+			<?php the_excerpt();?><div style="clear:both;"></div>
 			
 			<div class="postmeta">
 				<p><span class="tags"><?php the_tags('Tags: ',', ','') ?></span></p>
@@ -32,19 +32,18 @@
 			<?php trackback_rdf(); ?>
 			-->
 			
-			<?php endwhile; else: ?>
+			<?php endwhile; ?>
+		<div class="navigation">
+			<div class="alignleft"><?php next_posts_link('&laquo; Older Entries') ?></div>
+			<div class="alignright"><?php previous_posts_link('Newer Entries &raquo;') ?></div>
+		</div>            
+            
+            <?php else: ?>
 			
 			<p><?php _e('Sorry, no posts matched your criteria.'); ?></p><?php endif; ?>
 			
 		</div>
-				
-		<div class="comments" id="comments">
-	
-			<h4>Comments</h4>
-			<?php comments_template(); // Get wp-comments.php template ?>
-			
-		</div>
-		
+					
 	</div>
 	
 <?php include(TEMPLATEPATH."/sidebar.php");?>

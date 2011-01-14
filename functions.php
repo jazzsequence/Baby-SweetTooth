@@ -28,6 +28,25 @@ if ( function_exists('register_sidebars') )
 require (TEMPLATEPATH.'/ttftitles/ttftitles.php');
 require (TEMPLATEPATH.'/update-notice.php');
 
+/** Tell WordPress to run sweettooth_setup() when the 'after_setup_theme' hook is run. */
+add_action( 'after_setup_theme', 'sweettooth_setup' );
+
+if ( ! function_exists( 'sweettooth_setup' ) ):
+
+function sweettooth_setup() {
+
+	// Add default posts and comments RSS feed links to head
+	add_theme_support( 'automatic-feed-links' );
+	
+	// This theme uses wp_nav_menu() in one location.
+	register_nav_menus( array(
+		'primary' => __( 'Primary Navigation', 'sweettooth' ),
+	) );	
+
+} 
+endif;
+
+
 // set content width
 if ( ! isset( $content_width ) ) $content_width = 650;
 
