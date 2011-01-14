@@ -2,6 +2,10 @@ Baby SweetTooth
 ** CHANGELOG **
 
 ** 1-14-2011 **
+** Version 2.1 **
+releasing as a major update
+
+** 1-14-2011 **
 ** Version 2.0.3.beta-1 **
 officially moving the theme to beta
 replaced bloginfo('url') with echo home_url()
