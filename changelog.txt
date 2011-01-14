@@ -17,6 +17,7 @@ rearranged items on the options page
 added option to define how many posts appear on the Blog page
 added sticky post styling
 added post_class() div
+added styles for dropdown menus
 
 ** 1-13-2011 **
 ** Version 2.0.3.alpha-3 **

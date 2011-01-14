@@ -248,7 +248,7 @@ a:hover {
 	
 #nav li li a, #nav li li a:link, #nav li li a:visited, .menu li li a, .menu li li a:link, .menu li li a:visited {
 	width: 150px;
-	color: #FFFFFF;
+	color: #EF69B5;
 	font-size: 14px;
 	font-family: 'Trebuchet MS', Tahoma, Arial, Verdana;
 	font-weight: normal;
@@ -297,6 +297,18 @@ a:hover {
 #nav li:hover, #nav li.sfhover, .menu li:hover, .menu li.sfhover { 
 	position: static;
 	}
+
+.sub-menu { 
+	background: #fed9ee; 
+	z-index: 999; 
+	margin-top: -4px!important; 
+	border-right: 1px dotted #db429a;
+	border-bottom: 1px dotted #db429a;
+	border-left: 1px dotted #db429a;
+}	
+.sub-menu li { text-align: left; margin-left: 0px!important; }
+
+	
 /************************************************
 *	Homepage 		    	                    * 
 ************************************************/
