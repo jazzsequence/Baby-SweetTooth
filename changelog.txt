@@ -12,6 +12,7 @@ added .gallery-caption style
 changed get_settings to get_options
 fixed nav spacing & adjusted header padding
 resolved page content width issue since alpha-1
+changed get_option('home') to home_url() in header.php
 
 ** 1-13-2011 **
 ** Version 2.0.3.alpha-3 **
