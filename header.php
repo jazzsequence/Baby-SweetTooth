@@ -74,7 +74,7 @@ if (window.attachEvent) window.attachEvent("onload", sfHover);
 </div>
 <?php } ?>
 <div class="headerleft">
-        <h1><a href="<?php echo get_option('home'); ?>" rel="nofollow">
+        <h1><a href="<?php echo home_url(); ?>" rel="nofollow">
 		<?php the_ttftext(get_bloginfo('name'),$echo = true, $style="sweettooth"); ?>
         </a></h1> 
 	</div>

@@ -118,12 +118,10 @@ a:hover {
 
 #header {
 	width: 1016px;
-	height: 200px;
 	color: #FFFFFF;
 	font-size: 11px;
 	margin: 0px;
 	padding: 0px 0px 10px 0px;
-	overflow: hidden;
 	}
 
 #header h1 {
@@ -132,7 +130,7 @@ a:hover {
 	font-family: "Palatino Linotype", Palatino, "Book Antiqua", serif;
 	font-weight: normal;
 	margin: 0px;
-	padding: 15px 0px 0px 20px;
+	padding: 0px 0px 20px 0px;
 	text-decoration: none;
 	}
 	
@@ -213,8 +211,6 @@ a:hover {
 	margin: 0px;
 	padding: 0px;
 	height: 40px;
-	position: relative;
-	top: -20px;
 	}
 	
 #nav ul, ul.menu, .menu ul {
@@ -533,6 +529,7 @@ a:hover {
 	border: 2px solid #ffffff;
 	padding: 0px 5px 0px 5px;	
 }	
+#contentpage .postarea { width: 996px!important; }
 #contentleft {
 	background: #fee8f5;
 	float: left;
