@@ -664,6 +664,7 @@ blockquote {
 	margin: 0px 0px 10px 0px;
 	padding: 10px;
 	}
+.sticky { border-bottom: 1px dotted #ef69b5; } 	
 	
 /************************************************
 *	Images  					     		    * 
