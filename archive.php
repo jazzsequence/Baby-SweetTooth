@@ -20,7 +20,7 @@
 				</div>			
 			</div>
             <div class="clear"></div>		
-			<?php the_content(__('Read more'));?><div style="clear:both;"></div>
+			<?php the_excerpt();?><div style="clear:both;"></div>
 			
 			<div class="postmeta2">
 				<p><span class="tags"><?php the_tags('Tags: ',', ','') ?></span></p>
@@ -35,7 +35,7 @@
 				
 	</div>
 	
-<?php include(TEMPLATEPATH."/sidebar.php");?>
+<?php get_sidebar(); ?>
 		
 </div>
 

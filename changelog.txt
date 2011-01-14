@@ -1,6 +1,12 @@
 Baby SweetTooth
 ** CHANGELOG **
 
+** 1-14-2011 **
+** Version 2.0.3.alpha-4 **
+changed full posts to excerpts on archive page
+changed full posts to excerpts on tag page
+updated sidebar call to use get_sidebar() instead of an include
+
 ** 1-13-2011 **
 ** Version 2.0.3.alpha-3 **
 Added an update notification script
