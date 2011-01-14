@@ -2,6 +2,10 @@ Baby SweetTooth
 ** CHANGELOG **
 
 ** 1-14-2011 **
+** Version 2.0.3.beta-1 **
+officially moving the theme to beta
+
+** 1-14-2011 **
 ** Version 2.0.3.alpha-4 **
 changed full posts to excerpts on archive page
 changed full posts to excerpts on tag page
