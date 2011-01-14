@@ -21,13 +21,13 @@
 							
 				<b>by category:</b>
 					<ul>
-						<?php wp_list_cats('sort_column=name'); ?>
+						<?php wp_list_categories(); ?>
 					</ul>
 		</div>
 		
 	</div>
 	
-<?php include(TEMPLATEPATH."/sidebar.php");?>
+<?php get_sidebar(); ?>
 		
 </div>
 
