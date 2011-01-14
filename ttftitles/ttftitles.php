@@ -54,7 +54,7 @@ $ttftitles_edit_labels = array ('image_type'           => array('Image Type','en
 				);
 
 $ttftitles_defaults = array('cache_directory' => TTFTITLES_DIRECTORY . '/cache',
-			    'cache_url'       => get_settings('siteurl') . '/wp-content/themes/babysweettooth/ttftitles/cache',
+			    'cache_url'       => get_option('siteurl') . '/wp-content/themes/babysweettooth/ttftitles/cache',
 			    'cache_lifetime'  => 30,
 			    'last_cache_tidy' => time(),
 			    'font_directory'  => TTFTITLES_DIRECTORY . '/fonts',
@@ -155,11 +155,11 @@ function ttftitles_complain ($complaint) {
 
 
 // -----------------------------------------------------------------
-// ttftitles_get_settings
+// ttftitles_get_option
 //
 // get the settings, even if you have set them first!
 
-function ttftitles_get_settings () {
+function ttftitles_get_option () {
   global $ttftitles_defaults, $ttftitles_default_styles;
   $options = get_option('ttftitles_settings');
   if (!$options) {
@@ -200,7 +200,7 @@ function ttftitles_save_settings ($options) {
 
 function ttftitles_clear_cache ($options=false) {
   if (!$options) {
-    $options = ttftitles_get_settings();
+    $options = ttftitles_get_option();
   }
   $cachedir = $options['cache_directory'];
   if (($dir = @opendir($cachedir)) !== false) {
@@ -222,7 +222,7 @@ function ttftitles_clear_cache ($options=false) {
 
 function ttftitles_purge_cache ($options=false) {
   if (!$options) {
-    $options = ttftitles_get_settings();
+    $options = ttftitles_get_option();
   }
   $cachedir = $options['cache_directory'];
   $lifetime = $options['cache_lifetime'];
@@ -395,7 +395,7 @@ function ttftitles_get_ttf_font_name ($fullpath) {
 
 function ttftitles_get_font_list ($options=null) {
   if (!$options) {
-    $options = ttftitles_get_settings();
+    $options = ttftitles_get_option();
   }
   $fontdir = $options['font_directory'];
   if (($dir = @opendir($fontdir)) !== false) {
@@ -420,7 +420,7 @@ function ttftitles_get_font_list ($options=null) {
 
 function ttftitles_find_font ($font_to_find, $options=null) {
   if (!$options) {
-    $options = ttftitles_get_settings();
+    $options = ttftitles_get_option();
   }
   $fontdir = $options['font_directory'];
   if (($dir = @opendir($fontdir)) !== false) {
@@ -803,7 +803,7 @@ function ttftitles_render ($text, $stylename='', $overrides='') {
 
   $retVal = $text;
 
-  $options = ttftitles_get_settings();
+  $options = ttftitles_get_option();
   if (empty($stylename)) {
     $stylename = $options['default_style'];
   }
@@ -1091,7 +1091,7 @@ function ttftitles_menu ($which) {
 
 function ttftitles_admin_page () {
   global $ttftitles_edit_labels, $ttftitles_default_styles;
-  $options = ttftitles_get_settings();
+  $options = ttftitles_get_option();
 
   // default to the style tab
   $menutab = 'Styles';

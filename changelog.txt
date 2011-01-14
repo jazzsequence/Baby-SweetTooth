@@ -9,6 +9,7 @@ updated sidebar call to use get_sidebar() instead of an include
 updated 404 page to use wp_list_categories instead of wp_list_cats
 resolved issue with archive pages since alpha-3 (archive pages not centered)
 added .gallery-caption style
+changed get_settings to get_options
 
 ** 1-13-2011 **
 ** Version 2.0.3.alpha-3 **
