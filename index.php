@@ -7,7 +7,8 @@
 		<div class="postarea">
 			
 			<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
-			<h1><a href="<?php the_permalink() ?>"><?php the_title(); ?></a></h1>
+			<div <?php post_class(); ?>>
+            <h1><a href="<?php the_permalink() ?>"><?php the_title(); ?></a></h1>
 			
 			<div class="date">
 			
@@ -31,7 +32,7 @@
 			<!--
 			<?php trackback_rdf(); ?>
 			-->
-			
+			</div>
 			<?php endwhile; else: ?>
 			
 			<p><?php _e('Sorry, no posts matched your criteria.'); ?></p><?php endif; ?>

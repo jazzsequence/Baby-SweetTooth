@@ -79,7 +79,7 @@ if (window.attachEvent) window.attachEvent("onload", sfHover);
         </a></h1> 
 	</div>
 <div style="clear:both;"></div>
-			<?php wp_nav_menu( array( 'container' => 'ul','menu_id' => 'nav','depth' => 1, 'theme_location' => 'primary' ) ); ?>            
+			<?php wp_nav_menu( array( 'container' => 'ul','menu_id' => 'nav', 'theme_location' => 'primary' ) ); ?>            
 
 
 

@@ -3,7 +3,7 @@
 Template Name: Blog Page
 */
 ?>
-
+<?php include (TEMPLATEPATH.'/get-theme-options.php'); ?>
 <?php get_header(); ?>
 
 <div id="content">
@@ -14,9 +14,10 @@ Template Name: Blog Page
 	
 			<!--The blog page template is currently set to show 5 posts.  Change showposts=5 to whatever number of posts you want to display.-->
 				
-			<?php $page = (get_query_var('paged')) ? get_query_var('paged') : 1; query_posts("showposts=5&paged=$page"); while ( have_posts() ) : the_post() ?>
+			<?php $page = (get_query_var('paged')) ? get_query_var('paged') : 1; query_posts("showposts=".$sweettooth_blogposts."&paged=$page"); while ( have_posts() ) : the_post() ?>
+			<div <?php post_class(); ?>>            
 			<h1><a href="<?php the_permalink() ?>" rel="bookmark"><?php the_title(); ?></a></h1>
-				
+
 			<div class="date">
 			
 				<div class="dateleft">
@@ -34,7 +35,7 @@ Template Name: Blog Page
 			<div class="postmeta2">
 				Filed Under: <?php the_category(', ') ?><br /><?php the_tags('Tags: ',', ','') ?>
 			</div>
-							
+			</div>							
 			<?php endwhile; ?>
 			
 			<p><?php posts_nav_link(); ?></p>
