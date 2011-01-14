@@ -3,6 +3,7 @@ Baby SweetTooth
 
 ** 1-14-2011 **
 ** Version 2.1 **
+added wp_link_pages functionality
 releasing as a major update
 
 ** 1-14-2011 **

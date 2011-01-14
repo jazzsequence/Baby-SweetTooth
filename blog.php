@@ -31,7 +31,7 @@ Template Name: Blog Page
 			</div>
 				
 			<?php the_content(__('[Read more]'));?><div style="clear:both;"></div>
-				
+            <div class="navigation"><?php wp_link_pages(); ?></div>                    				
 			<div class="postmeta2">
 				Filed Under: <?php the_category(', ') ?><br /><?php the_tags('Tags: ',', ','') ?>
 			</div>

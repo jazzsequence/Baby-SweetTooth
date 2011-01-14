@@ -24,7 +24,7 @@
 			<div class="clear"></div>
 
 			<?php the_content(__('Read more'));?><div style="clear:both;"></div>
-			
+            <div class="navigation"><?php wp_link_pages(); ?></div>                    							
 			<div class="postmeta">
 				<p><span class="tags"><?php the_tags('Tags: ',', ','') ?></span></p>
 			</div>
