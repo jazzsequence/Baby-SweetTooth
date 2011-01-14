@@ -5,6 +5,8 @@ Baby SweetTooth
 ** Version 2.0.3.beta-1 **
 officially moving the theme to beta
 replaced bloginfo('url') with echo home_url()
+replaced bloginfo('template_directory') and bloginfo('stylesheet_directory') with bloginfo('template_url') (not going to replace it with get_template_directory_uri() because that broke everything last time
+renamed files sidebar_left and sidebar_right to sidebar-left and sidebar-right and called with normal get_sidebar() in sidebar.php
 
 ** 1-14-2011 **
 ** Version 2.0.3.alpha-4 **
